@@ -1,0 +1,29 @@
+.cta__container {
+  position: relative;
+
+  video {
+    position: absolute;
+    object-fit: cover;
+    width: 100vw;
+    height: 80vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.title__wrapper {
+  height: 60%;
+  padding: 150px 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.description__container {
+  height: 100%;
+  padding: 20px;
+  margin-top: 100px;
+}

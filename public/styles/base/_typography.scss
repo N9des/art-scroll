@@ -1,0 +1,107 @@
+// typo import or font-face
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$texte: 'inter', sans-serif;
+$title: 'inter', sans-serif;
+
+.body {
+  color: black;
+  font-family: $texte;
+  font-size: 16px;
+}
+
+.title {
+  font-family: $title;
+  margin: 0;
+  line-height: 1;
+
+  &--big {
+    font-size: 4.2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 130%;
+  }
+
+  &--med {
+    font-size: 6rem;
+    font-weight: 200;
+    text-transform: uppercase;
+  }
+
+  &--small {
+    font-size: 4rem;
+    font-weight: 200;
+  }
+
+  &--xsmall {
+    font-size: 1.3rem;
+    line-height: 130%;
+  }
+}
+
+.texte {
+  color: black;
+  line-height: 1.5;
+  max-width: 55ch;
+  font-family: $texte;
+
+  &__footer {
+    font-size: .8rem;
+    max-width: 15ch;
+  }
+}
+
+.link{
+  font-family: $title;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  cursor: pointer;
+
+  &__menu {
+    font-size: 2.5em;
+    font-weight: 300;
+
+    &:hover{
+      border-bottom: solid 2px black;
+    }
+  }
+
+  &__cta {
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 400;
+    padding: 15px 60px;
+    border-radius: 30px;
+    margin-top: 30px;
+
+    &--feedbacks {
+      background-color: white;
+      color: black;
+    }
+  }
+
+  &__footer {
+    font-size: 1.1rem;
+    border-bottom: solid 1px black;
+
+    &--cta {
+      text-decoration: none;
+      padding: .5em 1em;
+      background-color: black;
+      color: white;
+      border-radius: 30px;
+      line-height: 1;
+    }
+
+    &:hover{
+      border-bottom: solid 2px black;
+    }
+  }
+
+  &:visited {
+    color: black;
+  }
+}

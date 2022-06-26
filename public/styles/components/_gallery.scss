@@ -1,0 +1,92 @@
+// locomotive scroll: in data-scroll-section -> put height vh 
+
+.gallery {
+  &__container {
+    margin: 250px 0;
+    height: 450vh;
+    position: relative;
+    overflow: hidden;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 70%;
+      background-color: black;
+      z-index: -1;
+    }
+  }
+
+  &__img {
+    position: absolute;
+
+    &--01 {
+      top: 8%;
+      left: 5%;
+      width: 250px;
+    }
+
+    &--02 {
+      top: 28%;
+      left: 40%;
+      width: 350px;
+    }
+
+    &--03 {
+      top: 48%;
+      left: -45%;
+      width: 480px;
+    }
+
+    &--04 {
+      top: 68%;
+      left: 40%;
+      width: 250px;
+    }
+
+    &--05 {
+      top: 89%;
+      left: 0;
+      width: 250px;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+
+    &--touch{
+      top: 3%;
+    }
+
+    &--with{
+      top: 22.5%;
+    }
+
+    &--your{
+      top: 41%;
+    }
+
+    &--eyes{
+      top: 61%;
+    }
+
+    &--cta{
+      top: 81%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .link__cta {
+        margin-top: 25px;
+      }
+    }
+  }
+}

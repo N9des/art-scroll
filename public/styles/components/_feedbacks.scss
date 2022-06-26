@@ -1,0 +1,60 @@
+.feedbacks {
+  &__container {
+    height: 150vh;
+  }
+
+  &__wrapper {
+    padding: 4em 0;
+    background-color: black;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  &__list-container {
+    margin: 6em 0;
+    overflow: scroll;
+    width: 100vw;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: calc(100vw * 3);
+  }
+
+  &__card {
+    background-color: white;
+    border-radius: 20px;
+    width: 100vw;
+    padding: 2em;
+    margin: 1em;
+
+    &--user {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &--name {
+      font-weight: 300;
+    }
+
+    &--img {
+      margin-right: 25px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+  }
+}

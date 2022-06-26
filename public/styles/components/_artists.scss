@@ -1,0 +1,54 @@
+// locomotive scroll: in data-scroll-section -> put height vh 
+
+.artists {
+  &__container {
+    margin-bottom: 250px;
+  }
+
+  &__wrapper {
+    height: 220vh;
+  }
+
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    background-color: black;
+    padding: 3em;
+    border-radius: 20px;
+
+    &--img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+    }
+
+    &--title {
+      font-size: 1.8rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      color: white;
+      margin: 40px 0 0  ;
+    }
+
+    &--infos {
+      color: white;
+    }
+  }
+}
