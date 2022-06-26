@@ -81,6 +81,10 @@ $title: 'inter', sans-serif;
       background-color: white;
       color: black;
     }
+
+    &:visited {
+      color: white;
+    }
   }
 
   &__footer {
@@ -99,9 +103,5 @@ $title: 'inter', sans-serif;
     &:hover{
       border-bottom: solid 2px black;
     }
-  }
-
-  &:visited {
-    color: black;
   }
 }
