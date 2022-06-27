@@ -5,10 +5,14 @@
 $texte: 'inter', sans-serif;
 $title: 'inter', sans-serif;
 
-.body {
+body {
   color: black;
   font-family: $texte;
   font-size: 16px;
+
+  @include large {
+    font-size: 18px;
+  }
 }
 
 .title {
@@ -21,17 +25,33 @@ $title: 'inter', sans-serif;
     text-transform: uppercase;
     font-weight: 800;
     line-height: 130%;
+
+    @include large {
+      font-size: 7rem;
+      max-width: 10ch;
+      letter-spacing: 3px;
+      line-height: 140%;
+    }
   }
 
   &--med {
     font-size: 6rem;
     font-weight: 200;
     text-transform: uppercase;
+
+    @include large {
+      font-size: 10rem;
+    }
   }
 
   &--small {
     font-size: 4rem;
     font-weight: 200;
+    text-transform: uppercase;
+
+    @include large {
+      font-size: 5rem;
+    }
   }
 
   &--xsmall {
@@ -62,9 +82,13 @@ $title: 'inter', sans-serif;
   &__menu {
     font-size: 2.5em;
     font-weight: 300;
-
+    
     &:hover{
       border-bottom: solid 2px black;
+    }
+
+    @include large {
+      font-size: 3rem;
     }
   }
 
@@ -77,14 +101,33 @@ $title: 'inter', sans-serif;
     border-radius: 30px;
     margin-top: 30px;
 
+    transition: background .3s ease-in-out,
+                  color .3s ease-in-out;
+
+      &:hover {
+        background-color: rgb(70, 70, 70);
+        color: white;
+      }
+
     &--feedbacks {
       background-color: white;
       color: black;
+
+      &:visited {
+        color: black;
+      }
     }
 
-    &:visited {
-      color: white;
+    &--artists {
+      margin-top: 100px;
     }
+
+    @include large {
+      font-size: 1.8rem;
+      padding: 15px 100px;
+      border-radius: 50px;
+    }
+
   }
 
   &__footer {
@@ -98,6 +141,13 @@ $title: 'inter', sans-serif;
       color: white;
       border-radius: 30px;
       line-height: 1;
+      transition: background .3s ease-in-out,
+                  color .3s ease-in-out;
+
+      &:hover {
+        background-color: rgb(70, 70, 70);
+        color: white;
+      }
     }
 
     &:hover{

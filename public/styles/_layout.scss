@@ -6,13 +6,18 @@
     position: absolute;
     object-fit: cover;
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
     top: 0;
     left: 0;
     z-index: -1;
   }
-
+  
   @include large {
+    padding:100px 80px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    
     video {
       display: block;
     }
@@ -20,7 +25,7 @@
 }
 
 .title__wrapper {
-  height: 60%;
+  height: 100%;
   padding: 150px 20px;
   text-align: left;
   display: flex;
@@ -30,14 +35,35 @@
   background-image: url('../assets/images/poster.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  animation: slideInLeft 1s ease-in-out;
 
   @include large {
     background-image: none;
+    height: 100%;
+    padding: 20px;
   }
 }
 
 .description__container {
-  height: 100%;
   padding: 20px;
   margin-top: 100px;
+  animation: slideInRight 1s ease-in-out;
+
+  @include large {
+    align-self: flex-end;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(89%);
+    opacity: 0;
+  }
 }

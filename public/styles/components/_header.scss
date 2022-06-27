@@ -6,10 +6,19 @@
   padding: 20px;
   z-index: 2;
   background-color: white;
+  animation: slideInDown 1s ease-in-out;
+
+  @include large {
+    padding: 20px 80px;
+  }
 }
 
 .logo {
   width: 80px;
+
+  @include large {
+    width: 100px;
+  }
 }
 
 .nav__header {
@@ -70,5 +79,12 @@
   to {
     transform: translateY(-100%);
     // opacity: 0;
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-20%);
+    opacity: 0;
   }
 }

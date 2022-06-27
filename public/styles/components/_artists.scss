@@ -6,7 +6,10 @@
   }
 
   &__wrapper {
-    height: 220vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__title {
@@ -22,6 +25,12 @@
     align-items: center;
     margin: 0;
     padding: 0;
+
+    @include large {
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-around;
+    }
   }
 
   &__card {
