@@ -38,6 +38,12 @@
     background-color: white;
     padding: 20px;
     z-index: 999;
+
+    @include large {
+      padding: 40px 80px;
+      width: calc(100% - 160px);
+      height: calc(100% - 80px);
+    }
   }
 
   &__list {
@@ -58,6 +64,10 @@
   position: absolute;
   top: 1;
   left: calc(100% - 50px);
+
+  @include large {
+    left: calc(100% - 120px);
+  }
 }
 
 .anim__menu {
